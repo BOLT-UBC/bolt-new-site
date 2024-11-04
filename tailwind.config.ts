@@ -12,6 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        'move-train': {
+          '0%': { transform: 'translateX(-100%)'},
+          '100%': { transform: 'translateX(0%)'}
+        },
+      },
+      animation: {
+        'move-train': 'move-train 10s linear infinite',
+      },
     },
   },
   plugins: [],
